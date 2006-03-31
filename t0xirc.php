@@ -2,8 +2,8 @@
 <?
 /*
  nagiosalert.php 2006 Mikael Fridh <mikael.fridh@ongame.com>
- Telnets to an eggdrop and .say's messages to a channel
- modified and cleaned up by Elan Ruusam√e <glen@pld-linux.org>
+ Telnets to an eggdrop and .say's messages to a channel.
+ Modified and cleaned up by Elan Ruusam‰e <glen@pld-linux.org>
 */
 
 error_reporting(E_ALL & ~E_NOTICE);
