@@ -1,4 +1,5 @@
 Summary:	A PHP to Eggdrop gateway class
+Summary(pl):	Klasa bramki PHP do Eggdropa
 Name:		t0xirc
 Version:	1.0.4
 Release:	0.2
@@ -17,6 +18,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 t0xirc is a PHP class that enable your applications to interact with
 the popular IRC bot Eggdrop.
+
+%description -l pl
+t0xirc to klasa PHP pozwalaj±ca aplikacjom wspó³pracowaæ z popularnym
+botem ircowym - Eggdropem.
 
 %prep
 %setup -q -n %{name}_%{version}
