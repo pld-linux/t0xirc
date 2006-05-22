@@ -28,7 +28,6 @@ if ($opt['m']) {
 		}
 		$mybot->say($line, $opt['c']);
 	}
-	fclose($fp);
 }
 
 $mybot->disconnect();
