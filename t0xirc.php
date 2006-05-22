@@ -13,9 +13,23 @@ $opt = getopt("u:p:h:P:c:m:");
 
 $mybot =& new t0xirc_bot($opt['u'], $opt['p'], $opt['h'], $opt['P']);
 $mybot->connect() or die("Unable to connect\n");
-$mybot->say($opt['m'], $opt['c']);
 
 printf("Connected to %s default chan %s.\n", $mybot->bot_nick, $mybot->channel['name']);
+
+if ($opt['m']) {
+	$mybot->say($opt['m'], $opt['c']);
+} else {
+	// read from stdin
+	$fp = STDIN;
+	while (!feof($fp)) {
+		$line = fgets($fp, 4096);
+		if (!$line) {
+			break;
+		}
+		$mybot->say($line, $opt['c']);
+	}
+	fclose($fp);
+}
 
 $mybot->disconnect();
 
