@@ -1,5 +1,5 @@
 Summary:	A PHP to Eggdrop gateway class
-Summary(pl.UTF-8):   Klasa bramki PHP do Eggdropa
+Summary(pl.UTF-8):	Klasa bramki PHP do Eggdropa
 Name:		t0xirc
 Version:	1.0.4
 Release:	0.2
