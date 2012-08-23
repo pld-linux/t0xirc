@@ -2,7 +2,7 @@ Summary:	A PHP to Eggdrop gateway class
 Summary(pl.UTF-8):	Klasa bramki PHP do Eggdropa
 Name:		t0xirc
 Version:	1.0.4
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Libraries
 Source0:	http://t0xirc.si.kz/downloads/%{name}_%{version}.tgz
@@ -10,7 +10,7 @@ Source0:	http://t0xirc.si.kz/downloads/%{name}_%{version}.tgz
 Source1:	%{name}.php
 URL:		http://t0xirc.si.kz/
 BuildRequires:	rpmbuild(macros) >= 1.461
-Requires:	php-common
+Requires:	php(core)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
